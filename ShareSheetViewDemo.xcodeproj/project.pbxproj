@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		C946C9DE25C1ABE800942548 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C946C9DD25C1ABE800942548 /* ContentView.swift */; };
 		C946C9E025C1ABE900942548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C946C9DF25C1ABE900942548 /* Assets.xcassets */; };
 		C946C9E325C1ABE900942548 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C946C9E225C1ABE900942548 /* Preview Assets.xcassets */; };
+		C946C9ED25C1AC0600942548 /* ShareSheetView in Frameworks */ = {isa = PBXBuildFile; productRef = C946C9EC25C1AC0600942548 /* ShareSheetView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C946C9ED25C1AC0600942548 /* ShareSheetView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = ShareSheetViewDemo;
+			packageProductDependencies = (
+				C946C9EC25C1AC0600942548 /* ShareSheetView */,
+			);
 			productName = ShareSheetViewDemo;
 			productReference = C946C9D825C1ABE800942548 /* ShareSheetViewDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = C946C9CF25C1ABE700942548;
+			packageReferences = (
+				C946C9EB25C1AC0600942548 /* XCRemoteSwiftPackageReference "ShareSheetView" */,
+			);
 			productRefGroup = C946C9D925C1ABE800942548 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C946C9EB25C1AC0600942548 /* XCRemoteSwiftPackageReference "ShareSheetView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rebeloper/ShareSheetView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C946C9EC25C1AC0600942548 /* ShareSheetView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C946C9EB25C1AC0600942548 /* XCRemoteSwiftPackageReference "ShareSheetView" */;
+			productName = ShareSheetView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C946C9D025C1ABE700942548 /* Project object */;
 }
